@@ -100,5 +100,25 @@
         </a>
       </div>
     </footer>
+
+    <div>
+      <h2>Поиск гостиницы в Седоне</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="arrival-date">Дата заезда:</label>
+          <input type="date" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" value="arrival-date" required>
+        <button type="submit" aria-label="Календарь"></button>
+
+        <label for="departure-date">Дата выезда:</label>
+          <input type="date" name="departure-date" id="departure-date" placeholder="4 июля 2017" value="departure-date" required>
+        <button type="submit" aria-label="Календарь"></button>
+
+        <label for="adult-guests">Взрослые:</label>
+          <input type="number" name="adult-guests" id="adult-guests" placeholder="2" value="number" required>
+
+        <label for="children-guests">Дети:</label>
+          <input type="number" name="children-guests" id="children-guests" placeholder="0" value="number" required>
+        <input type="submit" value="Найти" name="Найти">
+      </form>
+    </div>
   </body>
 </html>
