@@ -7,7 +7,7 @@
   <body>
     <div>
       <header>
-        <a href="#">
+        <a href="#" aria-label="Логотип Седоны">
           <img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
         </a>
         <nav>
@@ -21,15 +21,15 @@
       </header>
 
       <main>
-        <h1>Седона</h1>
+        <h1 class="visually-hidden">Седона</h1>
         <section>
-          <h2>Приглашение к знакомству</h2>
+          <h2 class="visually-hidden">Приглашение к знакомству</h2>
           <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <img src="img/welcome.svg" width="459" height="353" alt="Приглашение познакомиться с городом">
         </section>
 
         <section>
-          <h2>Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <ul>
             <li>
@@ -87,11 +87,11 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <label for="arrival-date">Дата заезда:</label>
             <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
-            <button type="submit" aria-label="Календарь"></button>
+            <button type="button" aria-label="Календарь"></button>
 
             <label for="departure-date">Дата выезда:</label>
             <input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017">
-            <button type="submit" aria-label="Календарь"></button>
+            <button type="button" aria-label="Календарь"></button>
 
             <label for="adult-guests">Взрослые:</label>
             <input type="text" name="adult-guests" id="adult-guests" placeholder="2">
@@ -108,9 +108,9 @@
         <p>#visitSEDONA</p>
         <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
         <ul>
-          <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Ютуб</a></li>
+          <li><a href="#" class="visually-hidden">Твиттер</a></li>
+          <li><a href="#" class="visually-hidden">Фейсбук</a></li>
+          <li><a href="#" class="visually-hidden">Ютуб</a></li>
         </ul>
         <div>
           <span>Website by</span>

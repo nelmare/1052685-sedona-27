@@ -7,7 +7,7 @@
   <body>
     <div>
       <header>
-        <a href="index.html">
+        <a href="index.html" aria-label="Логотип Седоны">
           <img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
         </a>
         <nav>
@@ -15,15 +15,15 @@
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
+            <li><a>Гостиницы</a></li>
           </ul>
         </nav>
       </header>
 
       <main>
-        <h1>Гостиницы Седоны</h1>
+        <h1 class="visually-hidden">Гостиницы Седоны</h1>
         <section>
-          <h2>Фильтр</h2>
+          <h2 class="visually-hidden">Фильтр</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
             <div>
               <fieldset>
@@ -92,18 +92,18 @@
               <a href="#">По рейтингу</a>
             </div>
             <div>
-              <a href="#" aria-label="По возрастанию"></a>
-              <a href="#" aria-label="По убыванию"></a>
+              <a href="#" class="visually-hidden" aria-label="По возрастанию">По возрастанию</a>
+              <a href="#" class="visually-hidden" aria-label="По убыванию">По убыванию</a>
             </div>
           </div>
           <div>
-            <h2>Варианты гостиниц</h2>
+            <h2 class="visually-hidden">Варианты гостиниц</h2>
             <section>
               <div>
                 <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
               </div>
               <div>
-                <a href="">
+                <a href="#">
                   <h3>Amara Resort & Spa</h3>
                 </a>
                 <p>Гостиница</p>
@@ -127,7 +127,7 @@
                 <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
               </div>
               <div>
-                <a href="">
+                <a href="#">
                   <h3>Desert Quail Inn</h3>
                 </a>
                 <p>Мотель</p>
@@ -150,7 +150,7 @@
                 <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
               </div>
               <div>
-                <a href="">
+                <a href="#">
                   <h3>Villas at Poco Diablo</h3>
                 </a>
                 <p>Апартаменты</p>
@@ -171,12 +171,12 @@
       </main>
 
       <footer>
-        <p>#visitSEDONA
-          Тел: +7(495) 666-02-66</p>
+        <p>#visitSEDONA</p>
+        <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
         <ul>
-          <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Ютуб</a></li>
+          <li><a href="#" class="visually-hidden">Твиттер</a></li>
+          <li><a href="#" class="visually-hidden">Фейсбук</a></li>
+          <li><a href="#" class="visually-hidden">Ютуб</a></li>
         </ul>
         <div>
           <p>Website by</p>
