@@ -27,8 +27,8 @@
         <h1 class="visually-hidden">Гостиницы Седоны</h1>
         <section class="filter">
           <h2 class="visually-hidden">Фильтр</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <div>
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="filter-container">
               <fieldset class="infrastructure">
                 <legend class="filter-title">Инфраструктура:</legend>
                 <ul class="filter-list">
@@ -66,6 +66,7 @@
               </fieldset>
             </div>
 
+            <div>
             <fieldset class="price-form">
               <legend class="filter-title">Стоимость в сутки (Р):</legend>
               <div class="marks">
@@ -81,18 +82,23 @@
               </span>
             </fieldset>
             <button class="button filter-button" type="submit">Показать</button>
+          </div>
           </form>
         </section>
 
         <section class="sorting-field">
           <h2 class="visually-hidden">Результаты поиска</h2>
-          <span class="sorting-results">Найдено: 3</span>
-          <div class="sorting">
-            <h3 class="sorting-title">Сортировка:</h3>
-            <div class="sorting-items">
-              <a class="active" href="#">По цене</a>
-              <a href="#">По типу</a>
-              <a href="#">По рейтингу</a>
+          <div class="container">
+            <div class="sorting-wrapper">
+              <span class="sorting-results">Найдено: 3</span>
+              <!--<div class="sorting">-->
+                <h3 class="sorting-title">Сортировка:</h3>
+                <div class="sorting-items">
+                  <a class="price-sorting active" href="#">По цене</a>
+                  <a class="type-sorting" href="#">По типу</a>
+                  <a class="rating-sorting" href="#">По рейтингу</a>
+                </div>
+              <!--</div>-->
             </div>
             <div class="sorting-marks">
               <a class="sorting-mark active-mark" href="#" aria-label="По возрастанию">
@@ -105,20 +111,27 @@
                 </svg></a>
             </div>
           </div>
+
           <div class="hotel-items">
             <h2 class="visually-hidden">Варианты гостиниц</h2>
             <section class="hotel-item">
-              <div class="hotel-item-picture">
-                <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
-              </div>
-              <div>
-                <a class="hotel-title" href="#" tabindex="1">
-                  <h3>Amara Resort & Spa</h3>
-                </a>
-                <p class="hotel-info">Гостиница</p>
-                <p class="hotel-info">От 4000 Р.</p>
-                <a class="button blue-button" href="hotel-item.html">Подробнее</a>
-                <button class="button brown-button" type="button">Забронировать</button>
+              <div class="container">
+                <div class="hotel-item-picture">
+                  <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
+                </div>
+                <div >
+                  <a class="hotel-title" href="#" tabindex="1">
+                    <h3>Amara Resort & Spa</h3>
+                  </a>
+                  <div class="hotel-info">
+                    <p class="hotel-type">Гостиница</p>
+                    <p class="hotel-price">От 4000 Р.</p>
+                  </div>
+                  <div class="button-wrapper">
+                    <a class="button blue-button hotel-button" href="hotel-item.html">Подробнее</a>
+                    <button class="button brown-button hotel-button" type="button">Забронировать</button>
+                  </div>
+                </div>
               </div>
               <div>
                 <ul class="rating-stars">
@@ -148,17 +161,23 @@
             </section>
 
             <section class="hotel-item">
-              <div class="hotel-item-picture">
-                <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
-              </div>
-              <div>
-                <a class="hotel-title" href="#">
-                  <h3>Desert Quail Inn</h3>
-                </a>
-                <p class="hotel-info">Мотель</p>
-                <p class="hotel-info">От 3000 Р.</p>
-                <a class="button blue-button" href="hotel-item.html">Подробнее</a>
-                <button class="button brown-button" type="button">Забронировать</button>
+              <div class="container">
+                <div class="hotel-item-picture">
+                  <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
+                </div>
+                <div>
+                  <a class="hotel-title" href="#">
+                    <h3>Desert Quail Inn</h3>
+                  </a>
+                  <div class="hotel-info">
+                    <p class="hotel-type">Мотель</p>
+                    <p class="hotel-price">От 3000 Р.</p>
+                  </div>
+                  <div class="button-wrapper">
+                    <a class="button blue-button hotel-button" href="hotel-item.html">Подробнее</a>
+                    <button class="button brown-button hotel-button" type="button">Забронировать</button>
+                  </div>
+                </div>
               </div>
               <div>
                 <ul class="rating-stars">
@@ -183,17 +202,23 @@
             </section>
 
             <section class="hotel-item">
-              <div class="hotel-item-picture">
-                <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-              </div>
-              <div>
-                <a class="hotel-title" href="#">
-                  <h3>Villas at Poco Diablo</h3>
-                </a>
-                <p class="hotel-info">Апартаменты</p>
-                <p class="hotel-info">От 2000 Р.</p>
-                <a class="button blue-button" href="hotel-item.html">Подробнее</a>
-                <button class="button brown-button" type="button">Забронировать</button>
+              <div class="container">
+                <div class="hotel-item-picture">
+                  <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+                </div>
+                <div>
+                  <a class="hotel-title" href="#">
+                    <h3>Villas at Poco Diablo</h3>
+                  </a>
+                  <div class="hotel-info">
+                    <p class="hotel-type">Апартаменты</p>
+                    <p class="hotel-price">От 2000 Р.</p>
+                  </div>
+                  <div class="button-wrapper">
+                    <a class="button blue-button hotel-button" href="hotel-item.html">Подробнее</a>
+                    <button class="button brown-button hotel-button" type="button">Забронировать</button>
+                  </div>
+                </div>
               </div>
               <div>
                 <ul class="rating-stars">
@@ -215,15 +240,16 @@
         </section>
       </main>
 
-      <footer class="footer">
-        <p class="contacts">#visitSEDONA</p>
-        <a class="phone-number" href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+      <footer class="footer footer-hotels">
+        <div class="container">
+          <p class="contacts">#visitSEDONA</p>
+          <a class="phone-number" href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+        </div>
         <ul class="social-buttons">
           <li class="blue-button twitter">
             <a href="#">
               <span class="visually-hidden">Твиттер</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
-                <image width="17" height="15" overflow="visible" xlink:href="t.png"/>
                 <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
               </svg>
             </a>
@@ -240,7 +266,6 @@
             <a href="#">
               <span class="visually-hidden">Ютуб</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-                <image width="20" height="16" overflow="visible" xlink:href="youtube.png"/>
                 <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
               </svg>
             </a>
