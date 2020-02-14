@@ -15,10 +15,10 @@
         </a>
         <nav class="navigation">
           <ul class="navigation-items">
-            <li class="information"><a href="#">Информация</a></li>
-            <li class="media"><a href="#">Фото и видео</a></li>
-            <li class="map-site"><a href="#">Карта штата</a></li>
-            <li class="hotels"><a class="nav-item-current">Гостиницы</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a class="nav-item-current">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -33,15 +33,15 @@
                 <legend class="filter-title">Инфраструктура:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input type="checkbox" name="swimpool" id="swimpool" checked>
+                    <input class="filter-input-checkbox visually-hidden"  type="checkbox" name="swimpool" id="swimpool" checked>
                     <label for="swimpool">Бассейн</label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="parking" id="parking">
+                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="parking" id="parking">
                     <label for="parking">Парковка</label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="wi-fi" id="wi-fi">
+                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
                     <label for="wi-fi">wi-fi</label>
                   </li>
                 </ul>
@@ -51,15 +51,15 @@
                 <legend class="filter-title">Тип жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input type="checkbox" name="hotel" id="hotel" checked>
+                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
                     <label for="hotel">Гостиница</label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="motel" id="motel" checked>
+                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="motel" id="motel" checked>
                     <label for="motel">Мотель</label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="apartments" id="apartments" checked>
+                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="apartments" id="apartments" checked>
                     <label for="apartments">Апартаменты</label>
                   </li>
                 </ul>
@@ -70,9 +70,13 @@
             <fieldset class="price-form">
               <legend class="filter-title">Стоимость в сутки (Р):</legend>
               <div class="marks">
-                <input type="text" name="min-price" value="0" placeholder="от">
+                <label class="min-price">от
+                  <input type="number" name="min-price" value="0" placeholder="от">
+                </label>
                 <span></span>
-                <input type="text" name="max-price" value="3000" placeholder="до">
+                <label class="max-price">до
+                  <input type="text" name="max-price" value="3000" placeholder="до">
+                </label>
               </div>
               <span class="price-range">
                 <span class="circle-left"></span>
@@ -129,7 +133,7 @@
                   </div>
                   <div class="button-wrapper">
                     <a class="button blue-button hotel-button" href="hotel-item.html">Подробнее</a>
-                    <button class="button brown-button hotel-button" type="button">Забронировать</button>
+                    <button class="button hotel-button" type="button">Забронировать</button>
                   </div>
                 </div>
               </div>
@@ -175,7 +179,7 @@
                   </div>
                   <div class="button-wrapper">
                     <a class="button blue-button hotel-button" href="hotel-item.html">Подробнее</a>
-                    <button class="button brown-button hotel-button" type="button">Забронировать</button>
+                    <button class="button hotel-button" type="button">Забронировать</button>
                   </div>
                 </div>
               </div>
@@ -215,8 +219,8 @@
                     <p class="hotel-price">От 2000 Р.</p>
                   </div>
                   <div class="button-wrapper">
-                    <a class="button blue-button hotel-button" href="hotel-item.html">Подробнее</a>
-                    <button class="button brown-button hotel-button" type="button">Забронировать</button>
+                    <a class="button blue-hotels hotel-button" href="hotel-item.html">Подробнее</a>
+                    <button class="button brown-hotels hotel-button" type="button">Забронировать</button>
                   </div>
                 </div>
               </div>
