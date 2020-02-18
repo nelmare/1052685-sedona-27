@@ -294,7 +294,7 @@ img {
 
   margin-left: auto;
   margin-right: auto;
-  margin-top: 22px;
+  margin-top: 23px;
 }
 
 .bridge-advantage .advantages-text {
@@ -316,7 +316,7 @@ img {
   /*padding-right: 73px;*/
   /*padding-left: 63px;*/
   padding-top: 163px;
-  padding-bottom: 85px;
+  padding-bottom: 83px;
 
   line-height: 21px;
   background-color: #ffffff;
@@ -422,7 +422,7 @@ img {
   width: 400px;
   margin: 0;
   padding: 0;
-  padding-top: 48px;
+  padding-top: 50px;
   padding-bottom: 60px;
 
   background-color: #eeeeee;
@@ -470,7 +470,7 @@ img {
   width: 435px;
   margin: 0;
   padding: 0;
-  margin-bottom: 52px;
+  margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -489,7 +489,7 @@ img {
 .brown-button {
   font-weight: 700;
   margin: 0px;
-  padding-top: 26px;
+  padding-top: 31px;
   padding-bottom: 28px;
   padding-right: 140px;
   padding-left: 140px;
@@ -499,14 +499,16 @@ img {
 
 .index-form {
   position: absolute;
-  left: 316px;
+  left: 50%;
   display: flex;
   flex-direction: column;
   width: 568px;
   box-sizing: border-box;
 
   margin: 0;
+  margin-left: -284px;
   padding: 55px;
+  padding-top: 54px;
 
   font: inherit;
   line-height: 26px;
@@ -521,10 +523,8 @@ img {
 .index-form input {
   box-sizing: border-box;
 
-  padding-top: 8px;
-  padding-bottom: 5px;
-
-  margin-bottom: 29px;
+  padding-top: 7px;
+  padding-bottom: 3px;
 
   border: none;
   line-height: 26px;
@@ -548,17 +548,27 @@ img {
   outline: none;
 }
 
-.index-form span {
+.index-form div {
   display: flex;
 }
 
-.arrival-line,
-.departure-line {
+.arrival-date,
+.departure-date {
+  margin-bottom: 28px;
+}
+
+.form-container {
+  margin-bottom: 26px;
+}
+
+.arrival-date input,
+.departure-date input {
   position: relative;
   width: 346px;
   margin-left: 20px;
-  padding-left: 13px;
-  padding-right: 8px;
+  padding-left: 11px;
+  padding-right: 35px;
+  border: solid 2px transparent;
 }
 
 .arrival-date label {
@@ -588,6 +598,14 @@ img {
   padding-top: 8px;
 }
 
+.adults label {
+  margin-right: 41px;
+}
+
+.children label {
+  margin-right: 27px;
+}
+
 .departure-button {
   position: absolute;
   width: 38px;
@@ -613,26 +631,22 @@ img {
   fill: #81b3d2;
 }
 
-.adults-line {
-  position: relative;
-  margin-left: 41px;
-  width: 114px;
-
+.adults input {
+  width: 38px;
+  height: 38px;
+  padding-right: 3px;
+  padding-left: 3px;
   text-align: center;
 }
 
 .adults-reduce {
-  position: absolute;
+  position: relative;
   width: 38px;
   height: 38px;
 
-  left: 169px;
-  /*box-sizing: border-box;*/
-  /*padding: 17px;*/
-  background: transparent;
-  margin-bottom: 29px;
   padding: 0;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .adults-reduce::before {
@@ -649,29 +663,15 @@ img {
   color: #a9a9a9;
 }
 
-/*.adults-reduce:hover::before {*/
-/*  content: "-";*/
-
-/*  position: absolute;*/
-/*  top: -2px;*/
-/*  left: 10px;*/
-
-/*  font-size: 40px;*/
-/*  font-weight: 400;*/
-/*  color: #000000;*/
-/*}*/
-
 .adults-increase {
-  position: absolute;
+  position: relative;
   width: 38px;
   height: 38px;
 
-  left: 245px;
   box-sizing: border-box;
   padding: 17px;
-  background: transparent;
-  margin-bottom: 29px;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .adults-increase::before {
@@ -691,25 +691,24 @@ img {
   margin-left: 53px;
 }
 
-.children-line {
-  position: relative;
-  margin-left: 27px;
-  width: 114px;
+.children input {
+  width: 38px;
+  height: 38px;
   text-align: center;
 }
 
 .children-reduce {
-  position: absolute;
+  position: relative;
   display: inline-block;
   width: 38px;
   height: 38px;
 
-  right: 130px;
   box-sizing: border-box;
   padding: 17px;
-  background: transparent;
   margin-bottom: 29px;
+
   border: none;
+  background-color: #f2f2f2;
 }
 
 .children-reduce::before {
@@ -728,17 +727,16 @@ img {
 
 
 .children-increase {
-  position: absolute;
+  position: relative;
   display: inline-block;
   width: 38px;
   height: 38px;
 
-  right: 55px;
   box-sizing: border-box;
   padding: 17px;
   background: transparent;
-  margin-bottom: 29px;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .children-increase::before {
@@ -754,7 +752,6 @@ img {
   color: #a9a9a9;
 
   background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .children-increase:hover::before,
@@ -772,15 +769,15 @@ img {
 }
 
 .blue-button {
+  width: 100%;
   background-color: #81b3d2;
-  margin-top: 26px;
+  /*margin-top: 26px;*/
   padding-top: 17px;
   padding-bottom: 15px;
   padding-right: 20px;
   padding-left: 20px;
   box-sizing: border-box;
 }
-
 
 .map {
   width: 1200px;
@@ -931,7 +928,7 @@ img {
   padding-top: 28px;
   padding-right: 72px;
   padding-left: 72px;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 
 
   color: #ffffff;
@@ -1007,39 +1004,39 @@ img {
   margin-bottom: 23px;
 }
 
-.filter-input-checkbox + label::before,
-.filter-input-checkbox:hover + label::before {
-  content: "";
+.filter-input-checkbox + label,
+.filter-input-checkbox:hover + label {
+  /*display: flex;*/
   width: 40px;
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  display: inline-block;
-  z-index: 2;
+  /*background-image: url("../img/checkbox-off.svg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 0 0;*/
+  display: flex;
+  /*z-index: 2;*/
   height: 23px;
   vertical-align: middle;
   cursor: pointer;
-  fill: #ffffff;
-  background-color: transparent;
-  color: white;
+  /*fill: #ffffff;*/
+  /*background-color: transparent;*/
+  /*color: white;*/
 
 }
 
-.filter-input-checkbox:checked + label::before,
-.filter-input-checkbox:checked:hover + label::before {
-  content: "";
+.filter-input-checkbox:checked + label,
+.filter-input-checkbox:checked:hover + label {
+  /*content: "";*/
   width: 40px;
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 2;
-  display: inline-block;
+  /*background-image: url("../img/checkbox-on.svg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 0 0;*/
+  /*z-index: 2;*/
+  display: flex;
   height: 23px;
   vertical-align: middle;
   cursor: pointer;
-  fill: #ffffff;
-  background-color: transparent;
-  color: white;
+  /*fill: #ffffff;*/
+  /*background-color: transparent;*/
+  /*color: white;*/
 }
 
 /*.filter-input-checkbox.disabled + label::before,*/
@@ -1291,8 +1288,8 @@ img {
 
   margin: 0;
   padding: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 29px;
   padding-left: 72px;
   padding-right: 72px;
   box-sizing: border-box;
@@ -1422,19 +1419,23 @@ img {
   background-color: #766357;
 }
 
-.book-button:hover {
+.book-button:hover,
+.brown-button:hover {
   background-color: #604e43;
 }
 
-.book-button:focus {
+.book-button:focus,
+.brown-button:focus {
   color: rgba(255,255,255,0.3);
   background-color: #503e33;
 }
 
+.blue-button:hover,
 .hotel-button:hover {
   background-color: #669ec0;
 }
 
+.blue-button:focus,
 .hotel-button:focus {
   color: rgba(255,255,255,0.3);
   background-color: #5496bd;
@@ -1474,3 +1475,42 @@ img {
   background-color: #f2f2f2;
 }
 
+/*.filter-input-checkbox + label::before,*/
+/*.filter-input-checkbox:hover + label::before {*/
+/*  content: "";*/
+/*  width: 40px;*/
+/*  background-image: url("../img/checkbox-off.svg");*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: 0 0;*/
+/*  display: inline-block;*/
+/*  z-index: 2;*/
+/*  height: 23px;*/
+/*  vertical-align: middle;*/
+/*  cursor: pointer;*/
+/*  fill: #ffffff;*/
+/*  background-color: transparent;*/
+/*  color: white;*/
+
+/*}*/
+
+/*.filter-input-checkbox:checked + label::before,*/
+/*.filter-input-checkbox:checked:hover + label::before {*/
+/*  content: "";*/
+/*  width: 40px;*/
+/*  background-image: url("../img/checkbox-on.svg");*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: 0 0;*/
+/*  z-index: 2;*/
+/*  display: inline-block;*/
+/*  height: 23px;*/
+/*  vertical-align: middle;*/
+/*  cursor: pointer;*/
+/*  fill: #ffffff;*/
+/*  background-color: transparent;*/
+/*  color: white;*/
+/*}*/
+
+/*!*.filter-input-checkbox.disabled + label::before,*!*/
+/*.filter-input-checkbox:checked:disabled + label::before {*/
+/*  fill: #6a6a6a;*/
+/*}*/

@@ -44,7 +44,7 @@
               <div class="container">
                 <div class="blue-item">
                   <h3 class="advantages-title">Настоящий городок</h3>
-                  <p class="advantages-text">- №1 -</p>
+                  <p class="advantages-text">— №1 —</p>
                   <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <div class="sedona-picture">
@@ -69,7 +69,7 @@
             <li class="blue-advantage bridge-advantage">
               <div class="blue-item">
                 <h3 class="advantages-title">Там есть<br> Мост дьявола</h3>
-                <p class="advantages-text">- №2 -</p>
+                <p class="advantages-text">— №2 —</p>
                 <p class="advantages-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
               <div class="mountains-picture">
@@ -78,17 +78,17 @@
             </li>
               <li class="grey-advantage area">
                 <h3 class="advantages-item-title">Небольшая площадь</h3>
-                <p class="advantages-item-text">- №3 -</p>
+                <p class="advantages-item-text">— №3 —</p>
                 <p class="advantages-item-text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="grey-advantage road">
               <h3 class="advantages-item-title">Красивая дорога</h3>
-              <p class="advantages-item-text">- №4 -</p>
+              <p class="advantages-item-text">— №4 —</p>
               <p class="advantages-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="grey-advantage tourists">
               <h3 class="advantages-item-title">Мало туристов</h3>
-                <p class="advantages-item-text">- №5 -</p>
+                <p class="advantages-item-text">— №5 —</p>
                 <p class="advantages-item-text">Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
@@ -99,7 +99,7 @@
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           <button class="button brown-button" type="button">Поиск гостиницы в Седоне</button>
           <form class="index-form" action="https://echo.htmlacademy.ru" method="post">
-            <span class="arrival-date">
+            <div class="arrival-date">
               <label for="arrival-date">Дата заезда:</label>
               <input class="arrival-line" type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
               <button class="arrival-button" type="button" aria-label="Календарь">
@@ -108,9 +108,9 @@
                   <path fill="#cacaca" d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
                 </svg>
               </button>
-            </span>
+            </div>
 
-            <span class="departure-date">
+            <div class="departure-date">
               <label for="departure-date">Дата выезда:</label>
               <input class="departure-line" type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017">
               <button class="departure-button" type="button" aria-label="Календарь">
@@ -119,23 +119,23 @@
                   <path fill="#cacaca" d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
                 </svg>
               </button>
-            </span>
+            </div>
 
-            <span class="form-container">
-              <span class="adults">
+            <div class="form-container">
+              <div class="adults">
                 <label for="adult-guests">Взрослые:</label>
-                <input class="adults-line" type="text" name="adult-guests" id="adult-guests" placeholder="2">
                 <button class="adults-reduce" type="button" aria-label="Убавить"></button>
+                <input class="adults-line" type="text" name="adult-guests" id="adult-guests" placeholder="2">
                 <button class="adults-increase" type="button" aria-label="Добавить"></button>
-              </span>
-              <span class="children">
+              </div>
+              <div class="children">
                 <label  for="children-guests">Дети:</label>
-                <input class="children-line" type="text" name="children-guests" id="children-guests" placeholder="0">
                 <button class="children-reduce" type="button" aria-label="Убавить"></button>
+                <input class="children-line" type="text" name="children-guests" id="children-guests" placeholder="0">
                 <button class="children-increase" type="button" aria-label="Добавить"></button>
-              </span>
-            </span>
-            <button class="button blue-button search-button" type="submit">Найти</button>
+              </div>
+            </div>
+            <button class="button blue-button" type="submit">Найти</button>
           </form>
 
           <div class="map">
