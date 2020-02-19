@@ -84,7 +84,7 @@
                 <legend class="filter-title">Тип жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <label class="checkbox"for="hotel">
+                    <label class="checkbox" for="hotel">
                       <input class="filter-input-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
                       <svg class="checkbox-on" width="27" height="23" fill="#FFFFFF">
                         <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-on"></use>
@@ -122,59 +122,61 @@
             </div>
 
             <div>
-            <fieldset class="price-form">
-              <legend class="filter-title">Стоимость в сутки (Р):</legend>
-              <div class="marks">
-                <label class="min-price">от
-                  <input type="text" name="min-price" value="0" placeholder="от">
-                </label>
-                <span></span>
-                <label class="max-price">до
-                  <input type="text" name="max-price" value="3000" placeholder="до">
-                </label>
-              </div>
-              <div class="price-range">
-                <div class="line-grey">
-                  <div class="line-white"></div>
+              <fieldset class="price-form">
+                <legend class="filter-title">Стоимость в сутки (Р):</legend>
+                <div class="marks">
+                  <label class="min-price">от
+                    <input type="text" name="min-price" value="0" placeholder="от">
+                  </label>
+                  <span></span>
+                  <label class="max-price">до
+                    <input type="text" name="max-price" value="3000" placeholder="до">
+                  </label>
                 </div>
-                <div>
-                  <div class="circles circle-left"></div>
-                  <div class="circles circle-right"></div>
+                <div class="price-range">
+                  <div class="line-grey">
+                    <div class="line-white"></div>
+                  </div>
+                  <div>
+                    <div class="circles circle-left"></div>
+                    <div class="circles circle-right"></div>
+                  </div>
                 </div>
-              </div>
-            </fieldset>
-            <button class="button filter-button" type="submit">Показать</button>
-          </div>
+              </fieldset>
+              <button class="button filter-button" type="submit">Показать</button>
+            </div>
           </form>
         </section>
 
-        <section class="sorting-field">
-          <h2 class="visually-hidden">Результаты поиска</h2>
-          <div class="container">
-            <div class="sorting-wrapper">
-              <span class="sorting-results">Найдено:&nbsp;3</span>
-                <h3 class="sorting-title">Сортировка:</h3>
-                <div class="sorting-items">
-                  <a class="price-sorting active" href="#">По цене</a>
-                  <a class="type-sorting" href="#">По типу</a>
-                  <a class="rating-sorting" href="#">По рейтингу</a>
-                </div>
+        <section>
+          <section class="sorting-field">
+            <h2 class="visually-hidden">Результаты поиска</h2>
+            <div class="container">
+              <div class="sorting-wrapper">
+                <span class="sorting-results">Найдено:&nbsp;3</span>
+                  <h3 class="sorting-title">Сортировка:</h3>
+                  <div class="sorting-items">
+                    <a class="price-sorting active" href="#">По цене</a>
+                    <a class="type-sorting" href="#">По типу</a>
+                    <a class="rating-sorting" href="#">По рейтингу</a>
+                  </div>
+              </div>
+              <div class="sorting-marks">
+                <a class="sorting-mark" href="#" aria-label="По возрастанию">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+                  </svg>
+                </a>
+                <a class="sorting-mark active-mark" href="#" aria-label="По убыванию">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div class="sorting-marks">
-              <a class="sorting-mark" href="#" aria-label="По возрастанию">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
-                </svg>
-              </a>
-              <a class="sorting-mark active-mark" href="#" aria-label="По убыванию">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#cacaca" d="M5.5 10L0 0h11"/>
-                </svg>
-              </a>
-            </div>
-          </div>
+          </section>
 
-          <div class="hotel-items">
+          <section class="hotel-items">
             <h2 class="visually-hidden">Варианты гостиниц</h2>
             <section class="hotel-item">
               <div class="container">
@@ -182,7 +184,7 @@
                   <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
                 </div>
                 <div class="hotel-wrapper">
-                  <a class="hotel-title" href="#" tabindex="1">
+                  <a class="hotel-title" href="#">
                     <h3>Amara Resort & Spa</h3>
                   </a>
                   <div class="hotel-info">
@@ -298,7 +300,7 @@
                 <span class="rating">Рейтинг: 9,2</span>
               </div>
             </section>
-          </div>
+          </section>
         </section>
       </main>
 

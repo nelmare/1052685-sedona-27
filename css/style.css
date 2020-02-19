@@ -203,8 +203,6 @@ img {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 11px;
-  /*margin-top: -10px;*/
-
 
   font-size: 21px;
   font-weight: bold;
@@ -320,8 +318,6 @@ img {
   padding: 0;
   /*padding-right: 73px;*/
   /*padding-left: 63px;*/
-  padding-top: 161px;
-  padding-bottom: 82px;
 
   line-height: 21px;
   background-color: #ffffff;
@@ -331,6 +327,8 @@ img {
   margin: 0;
   padding: 0;
   width: 400px;
+  padding-top: 162px;
+  padding-bottom: 82px;
 }
 
 .living,
@@ -343,8 +341,8 @@ img {
   content: "";
 
   position: absolute;
-  bottom: 114px;
-  right: 161px;
+  top: 60px;
+  right: 163px;
 
   width: 75px;
   height: 72px;
@@ -358,8 +356,8 @@ img {
   content: "";
 
   position: absolute;
-  bottom: 114px;
-  right: 161px;
+  top: 60px;
+  right: 163px;
 
   width: 74px;
   height: 70px;
@@ -373,8 +371,8 @@ img {
   content: "";
 
   position: absolute;
-  bottom: 114px;
-  right: 165px;
+  top: 56px;
+  right: 167px;
 
   width: 64px;
   height: 76px;
@@ -485,12 +483,11 @@ img {
 }
 
 .brown-button {
+  width: 568px;
   font-weight: 700;
   margin: 0px;
   padding-top: 31px;
   padding-bottom: 28px;
-  padding-right: 140px;
-  padding-left: 140px;
 
   background-color: #766357;
 }
@@ -1005,35 +1002,40 @@ img {
   margin-bottom: 23px;
 }
 
-.filter-input-checkbox:checked ~ .checkbox-on,
-.filter-input-checkbox:checked:hover ~ .checkbox-on {
+.checkbox {
   display: inline-block;
+  position: relative;
+  margin-left: 40px;
+}
+
+.filter-input-checkbox:checked ~ .checkbox-on {
+  display: inline-block;
+  position: absolute;
   vertical-align: middle;
   margin-right: 10px;
   text-align: left;
+  /*padding-left: 40px;*/
 
 }
 
-.filter-input-checkbox:checked ~ .checkbox-off,
-.filter-input-checkbox:checked:hover ~ .checkbox-off {
+.filter-input-checkbox:checked ~ .checkbox-off {
   display: none;
 }
 
-.filter-input-checkbox ~ .checkbox-on,
-.filter-input-checkbox:hover ~ .checkbox-on {
+.filter-input-checkbox ~ .checkbox-on {
   display: none;
 }
 
-.filter-input-checkbox ~ .checkbox-off,
-.filter-input-checkbox:hover ~ .checkbox-off {
+.filter-input-checkbox ~ .checkbox-off {
   display: inline-block;
+  position: absolute;
   vertical-align: middle;
   margin-right: 12px;
   text-align: left;
 }
 
-.checkbox input[type="checkbox"]:focus + .checkbox-on {
-  border-color: #663d15;
+.checkbox input[type="checkbox"]:focus + .checkbox-on,
+.checkbox input[type="checkbox"]:focus ~ .checkbox-off {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
@@ -1351,15 +1353,14 @@ img {
   color: #000000;
 }
 
-
-
 .hotel-title:hover {
   color: #81b3d2;
 }
 
-.hotel-item .hotel-title:focus {
+.hotel-wrapper .hotel-title:focus {
   color: rgba(0,0,0,0.3);
 }
+
 
 .hotel-info {
   display: flex;
@@ -1482,10 +1483,10 @@ img {
   background-color: #f2f2f2;
 }
 
-.filter-input-checkbox {
-  width: 27px;
-  height: 23px;
-}
+/*.filter-input-checkbox {*/
+/*  width: 27px;*/
+/*  height: 23px;*/
+/*}*/
 
 /*.filter-input-checkbox + label::before,*/
 /*.filter-input-checkbox:hover + label::before {*/
