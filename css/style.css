@@ -154,6 +154,7 @@ img {
 .welcome {
   width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   /*background-image: url("../img/welcome-background.jpg");*/
   /*background-position: center;*/
@@ -201,7 +202,7 @@ img {
   width: 440px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   /*margin-top: -10px;*/
 
 
@@ -216,11 +217,12 @@ img {
 
 .advantages {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   margin: 0;
   padding: 0;
-  margin-bottom: 52px;
+  margin-bottom: 50px;
 
   font-weight: 400;
   line-height: 26px;
@@ -246,6 +248,7 @@ img {
 
 .blue-advantage {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   margin: 0;
@@ -260,6 +263,7 @@ img {
 
 .blue-advantage .container {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -280,7 +284,7 @@ img {
   font-size: 21px;
   width: 155px;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .advantages-text {
@@ -294,7 +298,7 @@ img {
 
   margin-left: auto;
   margin-right: auto;
-  margin-top: 23px;
+  margin-top: 20px;
 }
 
 .bridge-advantage .advantages-text {
@@ -309,14 +313,15 @@ img {
 
 .white-advantage {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin: 0;
   padding: 0;
   /*padding-right: 73px;*/
   /*padding-left: 63px;*/
-  padding-top: 163px;
-  padding-bottom: 83px;
+  padding-top: 161px;
+  padding-bottom: 82px;
 
   line-height: 21px;
   background-color: #ffffff;
@@ -433,27 +438,20 @@ img {
   line-height: 21px;
 }
 
-/*.road .advantages-item-title {*/
-/*  width: 262px;*/
-/*}*/
-
-/*.tourists .advantages-item-title {*/
-/*  width: 246px;*/
-/*}*/
+.grey-advantage .advantages-item-text {
+  margin-top: 20px;
+}
 
 .area .advantages-item-text {
   width: 208px;
-  margin-top: 24px;
 }
 
 .road .advantages-item-text {
   width: 262px;
-  margin-top: 24px;
 }
 
 .tourists .advantages-item-text {
   width: 252px;
-  margin-top: 24px;
 }
 
 /* форма на главной странице*/
@@ -559,6 +557,7 @@ img {
 
 .form-container {
   margin-bottom: 26px;
+  width: 100%;
 }
 
 .arrival-date input,
@@ -585,7 +584,7 @@ img {
   align-items: center;
   justify-content: center;
 
-  bottom: 305px;
+  bottom: 303px;
   right: 57px;
 
   background: transparent;
@@ -847,6 +846,8 @@ img {
 
 .social-buttons li {
   background-color: #81b3d2;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .social-button {
@@ -925,10 +926,10 @@ img {
 .filter {
   margin: 0;
   padding: 0;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-right: 72px;
   padding-left: 72px;
-  padding-bottom: 6px;
+  padding-bottom: 7px;
 
 
   color: #ffffff;
@@ -1004,45 +1005,46 @@ img {
   margin-bottom: 23px;
 }
 
-.filter-input-checkbox + label,
-.filter-input-checkbox:hover + label {
-  /*display: flex;*/
-  width: 40px;
-  /*background-image: url("../img/checkbox-off.svg");*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: 0 0;*/
-  display: flex;
-  /*z-index: 2;*/
-  height: 23px;
+.filter-input-checkbox:checked ~ .checkbox-on,
+.filter-input-checkbox:checked:hover ~ .checkbox-on {
+  display: inline-block;
   vertical-align: middle;
-  cursor: pointer;
-  /*fill: #ffffff;*/
-  /*background-color: transparent;*/
-  /*color: white;*/
+  margin-right: 10px;
+  text-align: left;
 
 }
 
-.filter-input-checkbox:checked + label,
-.filter-input-checkbox:checked:hover + label {
-  /*content: "";*/
-  width: 40px;
-  /*background-image: url("../img/checkbox-on.svg");*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: 0 0;*/
-  /*z-index: 2;*/
-  display: flex;
-  height: 23px;
-  vertical-align: middle;
-  cursor: pointer;
-  /*fill: #ffffff;*/
-  /*background-color: transparent;*/
-  /*color: white;*/
+.filter-input-checkbox:checked ~ .checkbox-off,
+.filter-input-checkbox:checked:hover ~ .checkbox-off {
+  display: none;
 }
 
-/*.filter-input-checkbox.disabled + label::before,*/
-.filter-input-checkbox:checked:disabled + label::before {
+.filter-input-checkbox ~ .checkbox-on,
+.filter-input-checkbox:hover ~ .checkbox-on {
+  display: none;
+}
+
+.filter-input-checkbox ~ .checkbox-off,
+.filter-input-checkbox:hover ~ .checkbox-off {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  text-align: left;
+}
+
+.checkbox input[type="checkbox"]:focus + .checkbox-on {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.checkbox .filter-input-checkbox:disabled ~ .checkbox-off,
+.checkbox .filter-input-checkbox:checked:disabled ~ .checkbox-on {
   fill: #6a6a6a;
 }
+
+
+
 
 .marks {
   border: solid 2px #ffffff;
@@ -1154,14 +1156,13 @@ img {
 
 .filter-button {
   display: block;
-  width: 138px;
   box-sizing: border-box;
   margin-right: 97px;
   margin-left: auto;
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-left: 10px;
-  padding-right: 9px;
+  padding-left: 33px;
+  padding-right: 33px;
 
   font-size: 14px;
   font-weight: 400;
@@ -1186,7 +1187,7 @@ img {
 .sorting-field .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 31px;
   padding-left: 72px;
   padding-right: 73px;
   padding-bottom: 29px;
@@ -1288,8 +1289,8 @@ img {
 
   margin: 0;
   padding: 0;
-  padding-top: 28px;
-  padding-bottom: 29px;
+  padding-top: 30px;
+  padding-bottom: 24px;
   padding-left: 72px;
   padding-right: 72px;
   box-sizing: border-box;
@@ -1362,10 +1363,11 @@ img {
 
 .hotel-info {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   font: inherit;
   font-weight: 400;
@@ -1389,6 +1391,7 @@ img {
 
 .button-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .hotel-button {
@@ -1397,12 +1400,14 @@ img {
   font-weight: 700;
 
   margin-right: 7px;
+  margin-bottom: 5px;
   padding-top: 3px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 17px;
 
   background-color: #81b3d2;
+  box-sizing: border-box;
 }
 
 .book-button {
@@ -1411,12 +1416,14 @@ img {
   font-weight: 700;
 
   margin-right: 6px;
+  margin-bottom: 5px;
   padding-top: 3px;
   padding-bottom: 4px;
   padding-left: 17px;
   padding-right: 16px;
 
   background-color: #766357;
+  box-sizing: border-box;
 }
 
 .book-button:hover,
@@ -1473,6 +1480,11 @@ img {
   color: #666666;
 
   background-color: #f2f2f2;
+}
+
+.filter-input-checkbox {
+  width: 27px;
+  height: 23px;
 }
 
 /*.filter-input-checkbox + label::before,*/

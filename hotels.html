@@ -8,21 +8,15 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <svg style="display: none;">
-    <symbol id="checkbox-off" viewBox="0 0 23 23">
-        <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></>
-    </symbol>
-    <symbol id="checkbox-on" viewBox="0 0 27 23">
-
-
-      <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></symbol>
-
-
-
-  </svg>
-
-
-
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="checkbox-off" viewBox="0 0 23 23">
+        <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
+      </symbol>
+      <symbol id="checkbox-on" viewBox="0 0 27 23">
+        <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
+        <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+      </symbol>
+    </svg>
     <div class="site-container">
       <header class="header">
         <a class="logo" href="index.html" aria-label="Логотип Седоны">
@@ -48,23 +42,40 @@
                 <legend class="filter-title">Инфраструктура:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input class="filter-input-checkbox visually-hidden"  type="checkbox" name="swimpool" id="swimpool" checked>
-
-                    <svg class="checkbox-on" width="27" height="23" fill="#FFFFFF">
-                      <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-on"></use>
-                    </svg>
-                    <label for="swimpool">Бассейн</label>
+                    <label class="checkbox" for="swimpool">
+                      <input class="filter-input-checkbox visually-hidden"  type="checkbox" name="swimpool" id="swimpool" checked>
+                      <svg class="checkbox-on" width="27" height="23" fill="#FFFFFF">
+                        <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-on"></use>
+                      </svg>
+                      <svg  class="checkbox-off" width="23" height="23" fill="#FFFFFF">
+                        <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-off"></use>
+                      </svg>
+                      Бассейн
+                    </label>
                   </li>
                   <li class="filter-item">
-                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="parking" id="parking">
-                    <svg  class="checkbox-off" width="23" height="23" fill="#FFFFFF">
-                      <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-off"></use>
-                    </svg>
-                    <label for="parking">Парковка</label>
+                    <label class="checkbox" for="parking">
+                      <input class="filter-input-checkbox visually-hidden" type="checkbox" name="parking" id="parking">
+                      <svg class="checkbox-on" width="27" height="23" fill="#FFFFFF">
+                        <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-on"></use>
+                      </svg>
+                      <svg  class="checkbox-off" width="23" height="23" fill="#FFFFFF">
+                        <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-off"></use>
+                      </svg>
+                      Парковка
+                    </label>
                   </li>
                   <li class="filter-item">
-                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
-                    <label for="wi-fi">wi-fi</label>
+                    <label class="checkbox" for="wi-fi">
+                      <input class="filter-input-checkbox visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+                      <svg class="checkbox-on" width="27" height="23" fill="#FFFFFF">
+                        <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-on"></use>
+                      </svg>
+                      <svg  class="checkbox-off" width="23" height="23" fill="#FFFFFF">
+                        <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-off"></use>
+                      </svg>
+                      wi-fi
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -73,16 +84,38 @@
                 <legend class="filter-title">Тип жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked disabled>
-                    <label for="hotel">Гостиница</label>
+                    <label class="checkbox"for="hotel">
+                      <input class="filter-input-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+                      <svg class="checkbox-on" width="27" height="23" fill="#FFFFFF">
+                        <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-on"></use>
+                      </svg>
+                      <svg  class="checkbox-off" width="23" height="23" fill="#FFFFFF">
+                        <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-off"></use>
+                      </svg>
+                      Гостиница
+                    </label>
                   </li>
                   <li class="filter-item">
-                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="motel" id="motel" checked disabled>
-                    <label for="motel">Мотель</label>
+                    <label class="checkbox" for="motel"><input class="filter-input-checkbox visually-hidden" type="checkbox" name="motel" id="motel" checked>
+                    <svg class="checkbox-on" width="27" height="23" fill="#FFFFFF">
+                      <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-on"></use>
+                    </svg>
+                    <svg  class="checkbox-off" width="23" height="23" fill="#FFFFFF">
+                      <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-off"></use>
+                    </svg>
+                    Мотель</label>
                   </li>
                   <li class="filter-item">
-                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="apartments" id="apartments" checked>
-                    <label for="apartments">Апартаменты</label>
+                    <label class="checkbox" for="apartments">
+                      <input class="filter-input-checkbox visually-hidden" type="checkbox" name="apartments" id="apartments" checked>
+                      <svg class="checkbox-on" width="27" height="23" fill="#FFFFFF">
+                        <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-on"></use>
+                      </svg>
+                      <svg  class="checkbox-off" width="23" height="23" fill="#FFFFFF">
+                        <use xmlns="http://www.w3.org/2000/svg" xlink:href="#checkbox-off"></use>
+                      </svg>
+                      Апартаменты
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -120,14 +153,12 @@
           <div class="container">
             <div class="sorting-wrapper">
               <span class="sorting-results">Найдено:&nbsp;3</span>
-              <!--<div class="sorting">-->
                 <h3 class="sorting-title">Сортировка:</h3>
                 <div class="sorting-items">
                   <a class="price-sorting active" href="#">По цене</a>
                   <a class="type-sorting" href="#">По типу</a>
                   <a class="rating-sorting" href="#">По рейтингу</a>
                 </div>
-              <!--</div>-->
             </div>
             <div class="sorting-marks">
               <a class="sorting-mark" href="#" aria-label="По возрастанию">
