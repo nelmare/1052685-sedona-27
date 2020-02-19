@@ -66,9 +66,6 @@ img {
 
 .header {
   position: relative;
-
-
-  /*min-height: 56px;*/
 }
 
 
@@ -85,7 +82,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
 
   margin: 0;
   padding: 0;
@@ -106,7 +102,6 @@ img {
   padding-bottom: 16px;
 
   color: #000000;
-
 }
 
 .navigation a:hover {
@@ -147,6 +142,7 @@ img {
   margin-left: auto;
   text-align: right;
 }
+
 .navigation-items li:nth-child(4n+4) {
   text-align: right;
 }
@@ -156,9 +152,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /*background-image: url("../img/welcome-background.jpg");*/
-  /*background-position: center;*/
-  /*background-repeat: no-repeat;*/
 }
 
 .background-container {
@@ -172,12 +165,6 @@ img {
 
   margin: 0;
   padding: 0;
-
-  /*margin-bottom: 78px;*/
-
-  /*background-image: url("../img/mask.svg");*/
-  /*background-position: bottom;*/
-  /*background-repeat: no-repeat;*/
 }
 
 .background-container img {
@@ -188,6 +175,7 @@ img {
   padding-bottom: 71px;
   display: block;
 }
+
 .welcome .container {
   width: 100%;
   background-color: #ffffff;
@@ -210,7 +198,6 @@ img {
   text-align: center;
 
   background-color: #ffffff;
-
 }
 
 .advantages {
@@ -274,8 +261,6 @@ img {
   padding-top: 49px;
   padding-bottom: 25px;
   box-sizing: border-box;
-
-
 }
 
 .advantages-title {
@@ -302,6 +287,7 @@ img {
 .bridge-advantage .advantages-text {
   width: 305px;
 }
+
 .sedona-picture,
 .mountains-picture {
   width: 800px;
@@ -316,8 +302,6 @@ img {
 
   margin: 0;
   padding: 0;
-  /*padding-right: 73px;*/
-  /*padding-left: 63px;*/
 
   line-height: 21px;
   background-color: #ffffff;
@@ -382,7 +366,6 @@ img {
   background-position: 0 0;
 }
 
-
 .advantages-item-title {
   font-size: 21px;
   line-height: 21px;
@@ -413,6 +396,7 @@ img {
 .food .advantages-item-text {
   width: 284px;
 }
+
 .souvenirs .advantages-item-text {
   width: 273px;
 }
@@ -647,8 +631,6 @@ img {
 
 .adults-reduce::before {
   content: "—";
-  /*width: 12px;*/
-  /*height: 3px;*/
 
   position: absolute;
   top: 8px;
@@ -678,8 +660,6 @@ img {
   left: 12px;
   font-size: 22px;
   font-weight: bold;
-  /*width: 20px;*/
-  /*height: 20px;*/
   color: #a9a9a9;
 }
 
@@ -696,6 +676,7 @@ img {
 .children-reduce {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 38px;
   height: 38px;
 
@@ -721,16 +702,15 @@ img {
   color: #a9a9a9;
 }
 
-
 .children-increase {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 38px;
   height: 38px;
 
   box-sizing: border-box;
   padding: 17px;
-  background: transparent;
   border: none;
   background-color: #f2f2f2;
 }
@@ -743,8 +723,6 @@ img {
   left: 13px;
   font-size: 22px;
   font-weight: bold;
-  /*width: 20px;*/
-  /*height: 20px;*/
   color: #a9a9a9;
 
   background-repeat: no-repeat;
@@ -760,14 +738,13 @@ img {
 .children-increase:focus::before,
 .children-reduce:focus::before,
 .adults-increase:focus::before,
-.adults-reduce:focus::before{
+.adults-reduce:focus::before {
   color: #81b3d2;
 }
 
 .blue-button {
   width: 100%;
   background-color: #81b3d2;
-  /*margin-top: 26px;*/
   padding-top: 17px;
   padding-bottom: 15px;
   padding-right: 20px;
@@ -856,8 +833,8 @@ img {
   justify-content: center;
   margin: 0;
   padding: 0;
-
 }
+
 .social-button:hover {
   background-color: #669ec0;
 }
@@ -879,7 +856,6 @@ img {
   margin: 0;
   padding: 0;
   padding-top: 6px;
-
 }
 
 .contact-htmlacademy {
@@ -887,6 +863,7 @@ img {
   font-weight: 400;
 
   display: inline-block;
+  vertical-align: baseline;
   padding-bottom: 5px;
   margin-right: 8px;
 }
@@ -928,15 +905,12 @@ img {
   padding-left: 72px;
   padding-bottom: 7px;
 
-
   color: #ffffff;
 
   background-color: #81b3d2;
   background-image: url("../img/filter-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
-
-
 }
 
 .filter-form {
@@ -954,11 +928,6 @@ img {
   margin: 0;
   padding: 0;
 }
-
-/*.filter-list li {*/
-/*  padding: 0;*/
-/*  margin: 0;*/
-/*}*/
 
 .infrastructure,
 .housing,
@@ -999,23 +968,23 @@ img {
 .filter-item {
   font: inherit;
   font-weight: 400;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
+  position: relative;
 }
 
-.checkbox {
+.filter-item label {
   display: inline-block;
-  position: relative;
-  margin-left: 40px;
+  vertical-align: middle;
+  padding-left: 40px;
+  text-align: left;
 }
+
 
 .filter-input-checkbox:checked ~ .checkbox-on {
   display: inline-block;
   position: absolute;
   vertical-align: middle;
-  margin-right: 10px;
-  text-align: left;
-  /*padding-left: 40px;*/
-
+  left: 0px;
 }
 
 .filter-input-checkbox:checked ~ .checkbox-off {
@@ -1030,8 +999,7 @@ img {
   display: inline-block;
   position: absolute;
   vertical-align: middle;
-  margin-right: 12px;
-  text-align: left;
+  left: 0px;
 }
 
 .checkbox input[type="checkbox"]:focus + .checkbox-on,
@@ -1045,9 +1013,6 @@ img {
   fill: #6a6a6a;
 }
 
-
-
-
 .marks {
   border: solid 2px #ffffff;
 
@@ -1059,11 +1024,12 @@ img {
 
 .marks label {
   display: inline-block;
+  vertical-align: top;
 
   font-size: 14px;
   font-weight: 400;
   line-height: 33px;
-  vertical-align: top;
+
 
   cursor: pointer;
 }
@@ -1079,14 +1045,11 @@ img {
 }
 
 .marks input {
-  /*width: 157px;*/
-
   margin: 0;
   padding: 0;
 
   font: inherit;
   color: inherit;
-  /*font-weight: 400;*/
   border: none;
 
   width: 50px;
@@ -1095,9 +1058,10 @@ img {
 
 .marks span {
   display: inline-block;
+  vertical-align: middle;
   width: 2px;
   height: 22px;
-  vertical-align: middle;
+
   margin-top: 5px;
   margin-left: 1px;
   background: #ffffff;
@@ -1105,7 +1069,6 @@ img {
 
 .price-range {
   position: relative;
-
   margin-bottom: 32px;
 }
 
@@ -1183,7 +1146,6 @@ img {
 .sorting-field {
   margin: 0;
   padding: 0;
-
 }
 
 .sorting-field .container {
@@ -1212,12 +1174,9 @@ img {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-
-
 }
 
 .sorting-title {
-  /*width: 75px;*/
   margin-right: 40px;
 }
 
@@ -1229,7 +1188,6 @@ img {
 }
 
 .sorting-items {
-  /*width: 251px;*/
   display: flex;
   justify-content: space-between;
   margin-right: 33px;
@@ -1244,6 +1202,7 @@ img {
 .sorting-items a:last-child {
   margin-right: 0px;
 }
+
 .sorting-items .active {
   color: #81b3d2;
   text-decoration: none;
@@ -1278,6 +1237,7 @@ img {
 .sorting-mark:hover path {
   fill: #000000;
 }
+
 .active-mark path,
 .sorting-mark:focus path {
   fill: #81b3d2;
@@ -1309,7 +1269,6 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
-
 }
 
 .hotel-item-picture {
@@ -1323,7 +1282,6 @@ img {
 
   margin: 0;
   padding: 0;
-
 }
 
 .hotel-wrapper {
@@ -1361,7 +1319,6 @@ img {
   color: rgba(0,0,0,0.3);
 }
 
-
 .hotel-info {
   display: flex;
   flex-wrap: wrap;
@@ -1380,14 +1337,12 @@ img {
   margin: 0;
   padding: 0;
   margin-right: 6px;
-
 }
 
 .hotel-price {
   width: 142px;
   margin: 0;
   padding: 0;
-
 }
 
 .button-wrapper {
@@ -1450,7 +1405,6 @@ img {
 }
 
 .rating-stars {
-
   display: flex;
   justify-content: flex-end;
 
@@ -1464,8 +1418,8 @@ img {
   width: 18px;
   height: 17px;
   margin-left: 6px;
-
 }
+
 .rating {
   display: inline-block;
   vertical-align: middle;
@@ -1483,47 +1437,3 @@ img {
   background-color: #f2f2f2;
 }
 
-/*.filter-input-checkbox {*/
-/*  width: 27px;*/
-/*  height: 23px;*/
-/*}*/
-
-/*.filter-input-checkbox + label::before,*/
-/*.filter-input-checkbox:hover + label::before {*/
-/*  content: "";*/
-/*  width: 40px;*/
-/*  background-image: url("../img/checkbox-off.svg");*/
-/*  background-repeat: no-repeat;*/
-/*  background-position: 0 0;*/
-/*  display: inline-block;*/
-/*  z-index: 2;*/
-/*  height: 23px;*/
-/*  vertical-align: middle;*/
-/*  cursor: pointer;*/
-/*  fill: #ffffff;*/
-/*  background-color: transparent;*/
-/*  color: white;*/
-
-/*}*/
-
-/*.filter-input-checkbox:checked + label::before,*/
-/*.filter-input-checkbox:checked:hover + label::before {*/
-/*  content: "";*/
-/*  width: 40px;*/
-/*  background-image: url("../img/checkbox-on.svg");*/
-/*  background-repeat: no-repeat;*/
-/*  background-position: 0 0;*/
-/*  z-index: 2;*/
-/*  display: inline-block;*/
-/*  height: 23px;*/
-/*  vertical-align: middle;*/
-/*  cursor: pointer;*/
-/*  fill: #ffffff;*/
-/*  background-color: transparent;*/
-/*  color: white;*/
-/*}*/
-
-/*!*.filter-input-checkbox.disabled + label::before,*!*/
-/*.filter-input-checkbox:checked:disabled + label::before {*/
-/*  fill: #6a6a6a;*/
-/*}*/
