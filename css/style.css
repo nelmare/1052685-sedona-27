@@ -209,7 +209,7 @@ navigation a:active {
 }
 
 .welcome p {
-  width: 440px;
+  width: 441px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 14px;
@@ -315,7 +315,7 @@ navigation a:active {
   font: inherit;
   font-weight: 400;
 
-  width: 280px;
+  width: 282px;
 
   margin: 0;
   padding: 0;
@@ -436,15 +436,15 @@ navigation a:active {
 }
 
 .living .advantages-item-text {
-  width: 252px;
+  width: 254px;
 }
 
 .food .advantages-item-text {
-  width: 284px;
+  width: 285px;
 }
 
 .souvenirs .advantages-item-text {
-  width: 273px;
+  width: 274px;
 }
 
 .bridge-advantage {
@@ -474,11 +474,11 @@ navigation a:active {
 }
 
 .area .advantages-item-text {
-  width: 208px;
+  width: 210px;
 }
 
 .road .advantages-item-text {
-  width: 262px;
+  width: 264px;
 }
 
 .tourists .advantages-item-text {
@@ -496,7 +496,7 @@ navigation a:active {
 }
 
 .index-form-section p {
-  width: 435px;
+  width: 436px;
   margin: 0;
   padding: 0;
   margin-bottom: 48px;
@@ -541,7 +541,7 @@ navigation a:active {
 
   margin: 0;
   margin-left: -284px;
-  padding: 55px;
+  padding: 53px;
   padding-top: 54px;
 
   font: inherit;
@@ -635,8 +635,8 @@ navigation a:active {
 
 .arrival-button {
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,7 +647,7 @@ navigation a:active {
   -ms-flex-pack: center;
   justify-content: center;
 
-  bottom: 302px;
+  bottom: 303px;
   right: 57px;
 
   background: transparent;
@@ -724,7 +724,7 @@ navigation a:active {
 
   position: absolute;
   top: 8px;
-  left: 8px;
+  left: 11px;
 
   font-size: 21px;
   font-weight: 700;
@@ -748,7 +748,7 @@ navigation a:active {
   content: "+";
 
   position: absolute;
-  top: 9px;
+  top: 10px;
   left: 12px;
   font-size: 22px;
   font-weight: bold;
@@ -789,7 +789,7 @@ navigation a:active {
 
   position: absolute;
   top: 9px;
-  left: 12px;
+  left: 13px;
 
   font-size: 21px;
   font-weight: 700;
@@ -815,7 +815,7 @@ navigation a:active {
   content: "+";
 
   position: absolute;
-  top: 9px;
+  top: 10px;
   left: 13px;
   font-size: 22px;
   font-weight: bold;
