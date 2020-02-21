@@ -525,6 +525,24 @@ navigation a:active {
   background-color: #766357;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .index-form {
   position: absolute;
   left: 50%;
@@ -553,6 +571,15 @@ navigation a:active {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 7px 15px 0 rgba(0,1,1,0.15);
   box-shadow: 0px 7px 15px 0 rgba(0,1,1,0.15);
+}
+
+.form-close {
+display: none;
+}
+
+.form-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .index-form input {
@@ -1623,3 +1650,5 @@ color: #666666;
 
 background-color: #f2f2f2;
 }
+
+
