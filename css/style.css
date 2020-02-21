@@ -1404,6 +1404,7 @@ navigation a:active {
 /* карточки с гостиницами*/
 
 .hotel-item {
+  min-height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
