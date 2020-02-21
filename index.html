@@ -98,7 +98,7 @@
           <h2 class="index-form-title">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           <button class="button brown-button" type="button">Поиск гостиницы в Седоне</button>
-          <form class="index-form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="index-form form-hide" action="https://echo.htmlacademy.ru" method="post">
             <div class="arrival-date">
               <label for="arrival-date">Дата заезда:</label>
               <input class="arrival-line" type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
@@ -185,13 +185,8 @@
         </div>
       </footer>
     </div>
-    <script>
-      var button = document.querySelector(".brown-button");
-      var form = document.querySelector(".modal-login");
+    <script src="js/form.js" >
 
-      button.addEventListener("click", function (evt) {
-        evt.preventDefault();
-      });
 
     </script>
   </body>
