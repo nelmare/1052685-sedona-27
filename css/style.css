@@ -1466,7 +1466,7 @@ display: none;
 
 .hotel-item .container {
   width: 430px;
-  min-height: 150px;
+  /*min-height: 150px;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1633,7 +1633,7 @@ list-style: none;
 margin: 0;
 padding: 0;
 margin-bottom: 47px;
-  /*margin-top: 30px;*/
+  margin-top: 30px;
   /*margin-bottom: 24px;*/
 }
 
