@@ -17,7 +17,7 @@ try {
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
-  form.classList.toggle("form-show");
+  form.classList.toggle("form-close");
   form.classList.remove("form-error");
   if (isStorageSupport) {
     adults.value = storageAdults;
