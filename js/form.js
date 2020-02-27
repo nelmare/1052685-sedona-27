@@ -15,9 +15,13 @@ try {
   isStorageSupport = false;
 }
 
+window.onload = function () {
+  form.classList.add('form-close');
+}
+
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
-  form.classList.toggle("form-close");
+  form.classList.toggle("form-show");
   form.classList.remove("form-error");
   if (isStorageSupport) {
     adults.value = storageAdults;
@@ -47,4 +51,6 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+
 
